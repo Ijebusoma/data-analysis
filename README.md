@@ -1,3 +1,14 @@
+This is a project based on the Udacity Fullstack nanodegree. 
+We are required to create an SQL log report based on analysis of data from a large database.
+The report should pull data from the database through Python code and answer the following question:
+
+* 1. What are the most popular three articles of all time? Which articles have been accessed the most? 
+* 2. Who are the most popular article authors of all time? That is, when you sum up all of the articles each author has written, which authors get the most page views?
+* 3. On which days did more than 1% of requests lead to errors? This involves analysis the status code returned by each request and determining which requests led to errors.
+
+
+
+
 ### MAIN PREREQUISUITES
 * You need to have Python installed on your PC
 * Postgresql is also required
