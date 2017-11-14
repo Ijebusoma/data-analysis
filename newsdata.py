@@ -2,7 +2,7 @@ import psycopg2
 DBNAME = "news"
 
 
-def execute_query(query):
+def execute_query(query): #function to execute all the queries
     try:
         db = psycopg2.connect(database=DBNAME)
         c = db.cursor()
@@ -10,7 +10,7 @@ def execute_query(query):
         results = c.fetchall()
         db.close()
         return results
-    except BaseException:
+    except BaseException: #in case something goes wrong
         print("Error while perfoming database operation")
 
 
@@ -19,9 +19,9 @@ def get_articles():
                  log where log.path like concat('%', articles.slug)
                  group by articles.title, articles.author
                  order by views desc limit 3;"""
-    articles = execute_query(query)
-    for article in articles:
-        print ("Article name:{}, views:{}".format(article[0], article[1]))
+    articles = execute_query(query) #executes the popular article query
+    for article in articles: #loop through the results fetched from the database
+        print ("Article name:{}, views:{}".format(article[0], article[1])) #print output
 
 
 def get_authors():
@@ -32,7 +32,7 @@ def get_authors():
             order by views desc;"""
     authors = execute_query(query)
     for author in authors:
-        print("{}".format(author[0]))
+        print("{}".format(author[0])) #loop through and print out author names
 
 
 def get_request():
