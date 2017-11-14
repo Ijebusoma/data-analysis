@@ -2,7 +2,7 @@
 * You need to have Python installed on your PC
 * Postgresql is also required
 
-###STEPS TO RUN THIS PROJECT
+### STEPS TO RUN THIS PROJECT
 * Install Postgresql by following this [guide](https://www.postgresql.org/docs/9.2/static/installation.html).
 
   On Linux terminal, you can simply use this command instead: ```sudo apt-get -qqy install make zip unzip postgresql```
@@ -14,14 +14,14 @@
 * Change directory to the location where you cloned the project
 * Run ```python newsdata.py```
   
-#####POSTGRESQL SHORTCUTS
+##### POSTGRESQL SHORTCUTS
 * Connect to the database : ```psql news```
 * See more about a table: ```\d <tablename>```
 * Delete a view: ```drop view --viewname```
 
 #### SQL Command To Create the Views Used in this Project
 
-#####1. total_request
+##### 1. total_request
 
 ```
 CREATE VIEW total_request AS
@@ -32,7 +32,7 @@ GROUP BY date
 ORDER BY COUNT DESC; 
 ```
 
-#####2. error_request
+##### 2. error_request
 ```
 CREATE VIEW error_request AS
 SELECT count(*) AS COUNT,
@@ -42,7 +42,7 @@ WHERE status like '%404%'
 GROUP BY date
 ORDER BY COUNT DESC;
 ```
-#####3. error_rate
+##### 3. error_rate
 ```
 CREATE VIEW error_rate AS
 SELECT total_request.date,
