@@ -1,8 +1,8 @@
 This is a project based on the Udacity Fullstack nanodegree. 
-The objective is to create an SQL log report based on analysis of data from a large database.
-The report should pull data from the database through Python code and answer the following question:
+The objective is to create an SQL log report for a newspaper site based on analysis of data from a large database of authors and their published articles.
+The report should pull data from the database through Python code and answer the following questions:
 
-1. What are the most popular three articles of all time? Which articles have been accessed the most? 
+1. What are the most popular three articles of all time? That is which articles have been accessed the most? 
 2. Who are the most popular article authors of all time? That is, when you sum up all of the articles each author has written, which authors get the most page views?
 3. On which days did more than 1% of requests lead to errors? This involves analysis the status code returned by each request and determining which requests led to errors.
 
