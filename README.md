@@ -50,3 +50,4 @@ SELECT total_request.date,
 FROM error_request,total_request
 WHERE error_request.date=total_request.date;
 ```
+![alt text](https://github.com/Ijebusoma/data-analysis/blob/master/logresult.png)
