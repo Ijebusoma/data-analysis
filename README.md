@@ -1,4 +1,4 @@
-This is a project based on the Udacity Fullstack nanodegree. 
+Data analysis is based off of the Udacity Fullstack nanodegree. 
 The objective is to create an SQL log report for a newspaper site based on analysis of data from a large database of authors and their published articles.
 The report should pull data from the database through Python code and answer the following questions:
 
